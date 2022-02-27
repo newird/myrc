@@ -123,3 +123,7 @@ inoremap <Left>  <ESC>:echoe "Use h"<CR>
 inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
+" 支持在Visual模式下，通过C-y复制到系统剪切板
+vnoremap <C-y> "+y
+" 支持在normal模式下，通过C-p粘贴系统剪切板
+nnoremap <C-p> "*p
